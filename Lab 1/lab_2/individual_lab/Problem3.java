@@ -3,25 +3,72 @@ package lab_2.individual_lab;
 import kareltherobot.*;
 import java.awt.Color;
 
-public class Problem2 extends Robot
+public class Problem3 extends Robot
 {
    
     /**
      * Constructor for objects of class Problem1
      */
-    public Problem2(int st, int av, Direction dir, int beep)
+    public Problem3(int st, int av, Direction dir, int beep)
     {
         super(st, av, dir, beep);
     }
 
-    public void setField(){
-        setRowOne();
-        setRowTwo();
-        setRowThree();
-        setRowFour();
-        setRowFive();
-        setRowSix();
-        setRowSeven();
+    public void spellHello(){
+        lineOne();
+        lineTwo();
+        lineThree();
+        lineFour();
+        lineFive();
+    }
+    public void lineOne(){
+        turnLeft();
+        moveThree();
+        turnRight();
+        move();
+        turnRight();
+        putBeeper();
+        moveThree();
+        putBeeper();
+        moveTwo();
+        putBeeper();
+        move();
+        putBeeper();
+        move();
+        putBeeper();
+        move();
+        move();
+        putBeeper();
+        move();
+        putBeeper();
+        move();
+        putBeeper();
+        move();
+        move();
+        putBeeper();
+        move();
+        putBeeper();
+        move();
+        putBeeper();
+        move();
+        move();
+        putBeeper();
+        move();
+        putBeeper();
+        move();
+        putBeeper();
+    }
+    public void lineTwo(){
+        
+    }
+    public void lineThree(){
+        
+    }
+    public void lineFour(){
+        
+    }
+    public void lineFive(){
+        
     }
     public void setRowFive(){
         moveTwo();
