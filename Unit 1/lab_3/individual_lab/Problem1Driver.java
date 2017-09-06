@@ -1,35 +1,24 @@
 package lab_3.individual_lab;
 
+import kareltherobot.*;
+import java.awt.Color;
 
-/**
- * Write a description of class Problem1Driver here.
- *
- * @author (your name)
- * @version (a version number or a date)
- */
-public class Problem1Driver
+public class Problem1Driver implements Directions
 {
-    // instance variables - replace the example below with your own
-    private int x;
+    public static void main(String args[])  {
+        Problem1 karel = new Problem1(1, 1, South, -1);
+        karel.faceEast();
+        karel.turnOff();
+        
+    } 
 
-    /**
-     * Constructor for objects of class Problem1Driver
-     */
-    public Problem1Driver()
-    {
-        // initialise instance variables
-        x = 0;
-    }
-
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
+    static {
+        World.reset(); 
+        World.readWorld("worlds/fig5-8.kwld"); 
+        World.setBeeperColor(Color.magenta);
+        World.setStreetColor(Color.blue);
+        World.setNeutroniumColor(Color.green.darker());
+        World.setDelay(10);  
+        World.setVisible(true);
     }
 }

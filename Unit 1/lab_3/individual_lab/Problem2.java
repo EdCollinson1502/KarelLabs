@@ -15,6 +15,18 @@ public class Problem2 extends Robot
     }
 
     public void carpetRooms(){
+        MoveToRoom();
+        CarpetRoom();
+        LeaveRoom();
+    }
+    public void MoveToRoom(){
+        
+    }
+    public void CarpetRoom(){
+       
+       
+    }
+    public void LeaveRoom(){
         
     }
 }
